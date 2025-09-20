@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio Pribadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Len</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-white text-center text-md-start d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <p class="greeting">Hello Buds</p>
+                    <h1 class="display-3 fw-bold">I am Lendi Ade I</h1>
+                    <p class="fs-4">UI/UX Design Enthusiast</p>
+                    <p class="lead mt-4">I'm a person who has a keen interest in the design layout. I think presenting an attractive design is a matter of concern in developing a branding of products.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg mt-3">Kontak Saya</a>
+                </div>
+                <div class="col-md-5 text-center mt-5 mt-md-0">
+                    <img src="len.jpg" alt="Lendi Ade I" class="img-fluid profile-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section py-5 text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">saya adalah seorang dev fronted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section py-5 text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-item card bg-dark text-white border-0 shadow-lg" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Project 1" data-description="Deskripsi detail proyek 1.">
+                        <img src="comingsoon.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Project 1</h5>
+                        </div>
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
+                            <span class="view-details">Lihat Detail</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-item card bg-dark text-white border-0 shadow-lg" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Project 2" data-description="Deskripsi detail proyek 2.">
+                        <img src="comingsoon.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Project 2</h5>
+                        </div>
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
+                            <span class="view-details">Lihat Detail</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-item card bg-dark text-white border-0 shadow-lg" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Project 3" data-description="Deskripsi detail proyek 3.">
+                        <img src="comingsoon.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Project 3</h5>
+                        </div>
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
+                            <span class="view-details">Lihat Detail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section py-5 text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Kirim Pesan</button>
+                </div>
+                <div id="success-message" class="alert alert-success mt-3 d-none"></div>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="projectModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
